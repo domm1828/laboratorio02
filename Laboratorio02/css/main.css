@@ -1,0 +1,177 @@
+/*
+font-family: 'Assistant', sans-serif;
+font-family: 'Oswald', sans-serif;
+*/
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+body{
+    font-family: 'Oswald';
+}
+header{
+    width: 100%;
+    height: 200px;
+    background-color: #f2f2f2;
+    margin: 0px;
+}
+header img{
+    max-width: 200px;
+    float: left;
+}
+header nav{
+    font-family: 'Assistant';  
+}
+.menuHeader ul{
+    list-style: none;
+     
+}
+.menuHeader li{
+    float: left;
+    margin-top: 80px;
+}
+.menuHeader li a{
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    color:#021651;
+    font-weight: bold;
+    font-size: 20px;
+}
+.menuHeader li a:hover{
+    color:#ed1b24;
+}
+main{
+    clear: both;
+    width: 70%;
+    background-color: #03114569;
+    float: left;
+    height: 100vh;
+
+}
+section{
+    padding: 20px;
+}
+section .card-product{
+    max-width: 33.3%;
+    border: 2px solid #ed1b24;
+    border-radius: 20px;
+    background-color: white;
+    padding-top: 10px;
+  /*  float: left;*/
+}
+section .card-product img{
+    max-width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    border-bottom: 2px solid #021651;
+}
+section .card-product .description{
+    text-align: center;
+    line-height: 200%; 
+    font-family: 'Assistant';  
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+section .card-product  .precio{
+    text-align: right;
+    font-size: 18px;
+    color: #ed1b24;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+section .card-product-footer{
+    width: 100%;
+    background-color: #021651;
+    height: 40px;
+    border-radius: 0px 0px 20px 20px;
+     
+}
+section .card-product-footer button{
+    width: 50%;
+    float: left;
+    height: 40px;
+    background-color: #021651;
+    border-radius: 0px 0px 20px 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+aside{
+    width: 30%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    float: right;
+    height: 100vh;
+}
+aside section nav ul{
+list-style: none;
+margin: 0px;
+padding: 0px;
+}
+aside section nav li{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ed1b24;
+}
+aside section nav a{
+    text-decoration: none;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+aside section nav li:hover{
+    border-bottom: 1px solid #021651;
+    color: #ed1b24;
+}
+aside .form{
+    width: 100%;
+    border: 3px solid #021651;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+aside .form h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+aside .form input, aside .form textarea{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+aside .form textarea{
+    height: 100px!important;
+    resize: none;
+}
+aside .form button{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background-color: #ed1b24;
+    color: white;
+    border-radius: 10px;
+}
+footer{ 
+    clear: both;
+    padding: 60px;
+    background-color: #ed1b24;
+    color: white;
+}
+footer div{
+    width: 50%; 
+}
+footer .one{
+    float: left;
+}
+footer .two{
+    float: right;
+    text-align: right;
+}
+footer .two a{
+    color: white;
+    text-decoration: none;
+    padding-right: 10px;
+}
