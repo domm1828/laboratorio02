@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>REPASO</title>
 </head>
+
 <body>
-    prueba dsada dasdasds adsadsa adsa sdasd
+    <!-- Etiquetas de formularios 
+    action => ruta donde se enviaran los datos 
+    method=> forma de como envian los datos GET POST
+    enctype => subir archivos (multipart/form-data)
+    --> 
+
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <!-- CAJAS DE TEXTO 
+        input => type
+        text
+        radio
+        checkbox
+        password
+        email
+        date
+        -->
+        <label for="f1">Nombre</label>
+        <input id="f1" name="nombre" 
+        type="text" placeholder="Ingrese nombre"
+        required>
+        <br>
+        <label>Apellido</label>
+        <input type="text" name="apellido" value="Perez" >
+        <br>
+        <label for="f2">Email</label>
+        <input id="f2" type="email" required>
+        <br>
+        <label>Contraseña</label>
+        <input type="password">
+        <br>
+        <label>Genero</label>
+        <input type="radio" name="sexo" checked
+        value="1"> M
+        <input  type="radio" name="sexo"
+        value="2"> F
+        <br>
+        <label>Interes</label>
+        <br>
+        <input id="uno" type="checkbox"  value="0" name="interes">
+        <label for="uno">Comida</label>
+        <input id="dos" type="checkbox" value="1" name="interes">
+        <label for="dos">Musica</label>
+        <input  id="tres" type="checkbox"  value="2" checked name="interes">
+        <label for="tres">Lectura</label>
+        <br>
+        <label>Dirección</label>
+        <textarea></textarea>
+        <br>
+        <label>SELECCIONE CAFE</label>
+        <select name="" required multiple>
+            <option value="1">Cafe uno</option>
+            <option selected value="2">Cafe dos</option>
+            <option selected value="3">Cafe tres</option>
+        </select>
+        <br>
+        <!-- BOTONES DE ACCIONES
+        type => button,  submit, reset -->
+        <button type="button"><img src="">Accion</button>
+        <button type="reset">Limpiar</button>
+        <button type="submit">Registrase</button>
+
+
+    </form>
+
 </body>
+
 </html>
