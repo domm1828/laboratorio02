@@ -1,8 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
 header{ 
     display: flex;
     justify-content: center;
     align-items: center;
-    
 
     }
 .logo{
@@ -24,7 +28,7 @@ header{
     right: 10px;
     bottom: 10px;
 }
-.flotante button{
+.flotante .button{
     border: none;
     border-radius: 50px;
     background-color: green;
@@ -33,13 +37,78 @@ header{
     width: 80px;
     cursor: pointer;
 }
-.flotante button i{
+.flotante .button i{
     color: white;
     font-size: 40px;
 }
-.flotante button:hover{
+.flotante .button:hover{
     background-color: white;   
 }
-.flotante button:hover > i{
+.flotante .button:hover > i{
     color: green; 
+}
+
+main{
+    display: flex;
+    background-color: #cecece; 
+    flex-wrap: wrap;
+    
+    box-sizing: border-box ;
+    padding: 20px;
+}
+
+main .card{
+    width: 23%;
+    background-color: white;
+    border-radius: 20px; 
+    margin:1%;
+
+}
+.card .image img{
+    max-width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    filter: blur(7px);
+}
+.card .precio{
+    margin: 20px;
+    font-size: 25px;
+    padding: 5px;
+    border-left: 2px solid blue;
+    text-align: center;
+}
+.card .titulo{
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+}
+.card .image img:hover{
+    filter: none !important;
+}
+.card .precio:hover{
+    background-color:#818181;
+    color: white;
+    border-radius: 20px;
+     
+}
+.card .precio .addCart{
+    display: none;
+
+}
+.card .precio:hover .addCart{
+    display: inline-block;
+}
+.card .precio .addCart button{
+    border: none;
+    background: none;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
 }
