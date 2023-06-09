@@ -1,0 +1,21 @@
+header{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    }
+.logo{
+    width: 20%;
+    background-color: black;
+}
+.logo img{
+    max-width: 80%;
+}
+.menu{
+    width: 80%;  
+    background-color: red;
+    display: flex;
+    justify-content: center;
+}
+ 
