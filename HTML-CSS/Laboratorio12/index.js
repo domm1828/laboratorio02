@@ -1,6 +1,7 @@
 const inputItems = document.querySelector("#inputItems");
 const btnItems = document.getElementById("btnItems");
 const listItems= document.querySelector("#listItems");
+const itemsList = document.querySelector("#itemsList");
 
 inputItems.focus();
 
@@ -11,6 +12,7 @@ btnItems.addEventListener("click",function(){
  const tdElementTwo = document.createElement("td");/**<td></td> */
  const tdButton = document.createElement("button");
     tdButton.innerText="Eliminar"
+    tdButton.id="eliminarItems"
    // tdButton.className="btn btn-danger"
     tdButton.classList.add("btn","btn-danger");
 
@@ -23,6 +25,17 @@ btnItems.addEventListener("click",function(){
 
  listItems.prepend(trElement);
 
+ /**Crear li */
+ const liElement = document.createElement("li");
+ liElement.innerHTML="<p class='m-1'>"+ inputItems.value+"<button class='m-1 btn btn-danger'>Eliminar</button></p>";
+ itemsList.append(liElement);
+
+ const eliminarItems = document.querySelector("#eliminarItems");
+ eliminarItems.addEventListener("click",function(){
+  //accion de borrar.....
+ });
+
  inputItems.focus();
  inputItems.value="";
 })
+
