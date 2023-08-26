@@ -17,7 +17,7 @@ const juegoMaquina = ()=>{
     document.getElementById("cantidad").innerHTML = countJuego;
     maquinaJuego = juegoInicial(0,2);
     let init = document.querySelector("#init");
-    let imagen = `<img style="width:50px" src="${opciones[maquinaJuego]}">`;
+    let imagen = `<img style="width:50px" src="/JS/CLASE04A-LAB/${opciones[maquinaJuego]}">`;
     
     let creteDiv= document.createElement("div");
     creteDiv.classList.add("row",  "bg-dark" ,"text-white", "p-2");
@@ -32,7 +32,7 @@ const juegoMaquina = ()=>{
 
 const juegoUser = (id) =>{
     userJuego = juegoInicial(0,2);
-    let imagen = `<img style="width:50px" src="${opciones[userJuego]}">`;
+    let imagen = `<img style="width:50px" src="/JS/CLASE04A-LAB/${opciones[userJuego]}">`;
 
     let divUser = document.querySelector("#user_"+id);
     divUser.innerHTML=imagen;
